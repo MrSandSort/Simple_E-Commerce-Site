@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html>
+	<!-- head tag starts -->
+<head>
+	<!-- Allocation of meta tags and link with title tags -->
+	<meta charset="utf-8">
+	<meta name="author" content="Sandesh Prasad Paudel">
+	<meta name="description" content="HomePage Html">
+	<meta name="keyword" content="Html,Css,JavaScript,HomePage,Image Slider">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+	<title> MobilePhones Store</title>
+
+</head>
+<!-- Body tag starts -->
+<body>
+	<style>
+		/* Allowing Internal Css */
+
+		.offer{
+			border-radius:15px ;
+			/* Border radius property for proper outlook */
+		}
+
+		.ImageSlider{ 
+			height: 450px;
+			width:100%;
+			position: relative;
+			/* Allocating Image Slider features and then 
+			giving it a designated property and outlining */
+			
+		}
+
+		.img{
+			display: none;
+
+		}
+
+		.img img{
+
+            
+			height:450px;
+			width: 100%;
+			
+		}
+		.left ,.right{
+			cursor: pointer;
+			/* This features of cursor pointer will allow us to have a 
+		     pointer on moving a mouse to that particulat section */
+			position: absolute;
+			top: 40%;
+			padding: 8px 20px;
+			margin:0px 10px;
+			background: rgba(240, 252, 255, 0.868);
+			/* rgba for light color  */
+			color:rgb(14, 14, 14);
+			font-size: 25px;
+			height: 50px;
+		
+
+		}
+
+		.left{
+			left: 10px;
+		}
+		.right{
+			right: 10px;
+		}
+
+		.offer, .Blog{
+			flex: 50%;
+			margin-left: 50px; 
+			padding: 20px 30px;
+		}
+		.nah{
+			font-size:15px;  
+			font-weight: bold;
+			margin-left:50px;
+			color: black;
+			height: 50px; 
+			width:150px; 
+			border:1px solid white; 
+			border-radius: 35px;
+			font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+			
+		}
+
+		.Sir{
+			flex:50%; 
+			margin-top:40px; 
+			margin-left:100px;
+		}
+		.para{
+			font-size:18px;
+			 font-family: monospace;
+		}
+		.wrought{
+			display:flex;
+			height:200px; 
+			width:400px;
+			margin-top: 20px;
+			box-shadow:10px 10px 50px#aaaaaa;
+		    border-radius: 20px;
+		}
+		.Phone{
+			flex:50%;
+			margin:20px 40px;
+		}
+		.Naan{
+			  height:100px; 
+			  width:100px;
+		}
+		.Lamb{
+			display: block;
+			height: 250px;
+			flex: 25%;
+			margin:30px 25px;
+			text-align: center;
+			background-color: white;
+			/* allocating white background color */
+		}
+		 .late{
+			height: 190px;
+
+		}
+		.Ted{
+			font-size: 16px;
+			font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+		}
+		.Not{
+			font-size: 12px;
+		}
+		.Trend{
+			margin-left:600px;
+			/* moving a particular content along with div from left by 600px */
+
+		}
+
+		.Trend,.NoTrend{
+			height:20px;
+			background-color: Black;
+			color: aliceblue;
+			cursor: pointer;
+		
+
+		} 
+		
+
+	</style>
+
+
+<!-- header is allocated here -->
+	<header>
+
+		<!-- A lot of simple Css properties like padding, margin, bg-color, font-family and font-size,I have used In-line Css properties   -->
+		<img style="height:78px; cursor:pointer; padding-bottom: 20px; padding-left: 20px; " src="logo.png">
+		<nav class="navbar">
+			<!-- Navigation Bar is allocated -->
+			<ul>
+				<!-- Unordered list is listed and anchor tag is defined -->
+				<li><a href="LogIn.html">LogIn</a></li>
+				<li><a class="active" href="Index.html">Home</a></li>
+				<li><a href="Products.html">Products</a>
+				<ul>
+				    <li><a href="Products.html#Iphone">Iphone</a></li>
+					<li><a href="Products.html#Oppo">Oppo</a></li>
+					<li><a href="Products.html#MIUI">MIUI</a></li>
+					<li><a href="Products.html#Realme">Realme</a></li>
+					<li><a href="Products.html#OnePlus">OnePlus</a></li>
+
+				</ul>
+			    </li>
+				<li><a href="Blog.Html">Blog</a></li>
+				<li><a href="Research.Html">Research Section</a></li>
+				<li><a href="Contacts.Html">Contacts</a></li>
+				<li a href="#"><img style="height:70px; cursor:pointer; padding-bottom: 20px;" src="cart.jpg"></li>
+
+			</ul>
+		</nav>
+
+				
+		
+
+
+			
+		</div>
+	</header>
+
+	<section class="one">
+
+		<div class="ImageSlider">
+			<!-- Div for ImageSlider starts -->
+
+			<div class="img"><img src="01.JPG"></div>
+			<!-- div for images are here -->
+			<div class="img"><img src="12.jpg"></div>
+			<div class="img"><img src="67.jpg"></div>
+			<div class="img"><img src="45.jpg"></div>
+			<div class="img"><img src="89.jpg"></div>
+
+		</div>
+		<!-- For easy accessibilty span tag is used  -->
+		<span class="left" onclick="mover(-1)">&#10094</span>
+		<span class="right" onclick="mover(+1)">&#10095</span>
+
+
+	</section>		
+
+
+
+		</div>
+
+
+       <script>
+		//    internal Javascript  function for Image slider is here...
+	        let y=0;
+
+		    function mover(x){
+
+	    	   y = y+x; 
+
+	    	   slider(y);
+			
+			}
+			
+			function slider(num){
+	    	   let z = document.getElementsByClassName('img');
+
+			   if(num == z.length)
+
+			    {
+	      		   y=0;
+				   num=0;
+	     		}
+
+		 		if(num<0)
+			{ 
+		 			y= z.length-1;
+		 			num=z.length-1;
+
+		 		}
+
+		 	   for(let y of z ){
+				   y.style.display="none";
+			   }
+
+			z[num].style.display="block";
+	 }
+
+
+
+
+
+</script>
+
+<section class="two">
+	<!-- Section two starts here  with div, h1 , paragraph, button and line break tag as well-->
+
+	<div style=" background-color:rgba(250, 250, 250, 0.831); height: 500px; width: 100%; padding:30px 200px;  " class="Font">
+     <h1 style ="  font-size:40px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: 45px;">
+		 <span style="padding-left:80px ;">There is no more important</span><br><span style="color:brown;"> consumer products</span><span style="color:darkcyan"> than Mobile Phones</span>
+	 </h1><br>
+
+       <div style="display:flex; height:250px; margin-top: 2%;">
+        <div class="offer" style=" background:antiquewhite; "><h1 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;"><br><marquee> 
+			<span style="color: rgb(107, 82, 130);">SASTO DEAL...!!</span><br><span style="color:darkgoldenrod ;">With 15% discount coupouns</span></marquee></h1>
+			<p style="font-size:18px; "><br>That's why we are offering you to buy the one...!!</p><br>
+		<button class="nah" style="background-color:springgreen;"><a href="Products.html">Buy Now</a></button>
+		</div>
+        <div  class="offer" style="background-color:beige;"><br><h1 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Do Visit Our Blog Too.</h1>
+			<br><br><p style="font-size:18px;"><br>Exciting Blog about Technology has been Updated.</p><br>
+			<button class="nah" style=" background-color:aquamarine;"><a href="Blog.Html">Get Updated</a></button></b>
+
+		
+		</div>
+	   </div>
+	    
+	</div>
+</section>
+
+<section class="three">
+
+	<div style="height: 350px; display: flex; margin-top: 10px;">
+		<div class="Sir">
+		<h3 class="para"><a name="Newly Arrivals">Newly Arrivals</a></h3>
+		<!-- H3 fonts for Newly arrivals -->
+		  <div class="wrought">
+			<div class="Phone"><img class="Naan"  src="Iphone/Iphone13.jpg">
+			 
+			   <br><span>Iphone-13 ProMax</span><br><span style="cursor:pointer;color:blue; font-size:15px;">Trending Now</span>
+			   
+		     
+		     </div>
+
+			<div class="Phone"><img class="Naan"  src="Oppo/OppoX5.jpg">
+				<br><span> Oppo Find X5 Pro</span><br><span style="cursor:pointer;color:blue; font-size:15px;">Trending Now</span>
+			
+			
+			</div>
+
+
+		  </div>
+		</div>
+		<div class="Sir" >
+			<h3 class="para">Top-Ranked Products</h3>
+			<div class="wrought">
+				<div class="Phone"><img class="Naan"  src="MIUI/PocoX3.png">
+			 
+					<br><span>PocoX3 Pro</span><br><span style=" cursor:pointer;color:blue; font-size:15px;">Trending Now</span>
+					</div>
+
+				<div class="Phone"><img class="Naan" src="Realme/Narzo50.png ">
+				<br><span>Narzo50 Pro</span><br><span style="cursor:pointer;color:blue; font-size:15px;">Trending Now</span></div>
+			
+					
+				  
+				  </div>	
+
+
+			</div>
+		</div>
+
+	</div>
+
+
+</section>
+
+<section class="four">
+	<div style="height:450px; margin-top: 20px; background-color: beige;">
+	<h1 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;color:rgb(80, 50, 50); padding-left:500px;"> <a name="Featured Products"></a>Featured Products</h1>
+	<br><p style=" font-family:monospace;text-align:center;">We brought different products for you this year.</p>	
+	<div style="height:300px; display: flex; margin:8px 80px;" >
+		
+		<div class="Lamb">
+			<div><img class="late" src="Iphone/Iphone12.jpg"></div>
+			<div class="Ted"> IPhone12<br><span class="Not">NRs 138,900</span></div>
+
+		</div>
+
+		<div class="Lamb">
+			<div><img class="late" src="Realme/Realme C31.png"></div>
+			<div class="Ted"> RealmeC31<br><span class="Not">NRs 17,600</span></div>
+
+		</div>
+
+		<div class="Lamb">
+			<div><img class="late" src="MIUI/Redmi10 Prime.jpg"></div>
+			<div class="Ted">Redmi10 <br><span class="Not">NRs 23,900</span> </div>
+		
+
+		</div>
+
+		<div class="Lamb">
+			<div><img class="late" src="Oppo/OppoA93.jpg"></div>
+			<div class="Ted">OppoA93 <br><span class="Not">NRs 39,000</span>
+			</div>
+		</div>
+   </div>
+   <br>
+        <span class="Trend">&#10094</span>
+		<span class="NoTrend">&#10095</span>
+   </div>
+        
+
+	
+
+
+
+</section>
+
+<section class="Five">
+	<!-- Newsletters features are present in this section -->
+	<div class="Signup" style="height: 300px; padding:80px;" >
+		<div style=" float:left;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><h1><span style="color:rgb(74, 159, 131);">Subscribe As Soon </span>As Possible</h1><br>
+		<H2>Get Recent Updates about our Products and<span style="color:brown;"><br>Win Discount Vouchers</span></H2><br>
+		<h3>Drop Down Your Email...!!</h3>
+		</div>
+
+		<div style="float: right; padding-top:60px;">
+			<p style="font-size:15px; font-family:monospace;">Get Freshout News About Our Products</p><br>
+			<form id="myForm">
+				<!-- Forms tag is used here -->
+				<span id=""></span>
+				<input style="width:300px; height:50px;" type="text" id="Email" placeholder="Type Your Email Here...">
+				<button style=" cursor:pointer;height:50px; width:140px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color:aquamarine;"><h4><a name="Subscribe">Subscribe</a></h4></button>
+				 
+			</form>
+
+
+		</div>
+
+		
+	</div>
+
+	
+</section>
+
+</section>
+
+</body>
+<footer>
+	<!-- Footer section starts here -->
+	<div style=" color:whitesmoke;height:250px; background-color:rgb(14, 14, 14); display:flex;">
+
+		<div class="rent">
+			<h4 class="gurr"> About Us</h4>
+			<!-- Allocation of h4 tag -->
+			<p style="padding-left: 30px;"class="ray">
+				Clash Phones is all about giving updates of Mobile Phones and Selling Products based on those updates. We also sell Mobile Phones that have market demands holding over long time.We also maintain plethora supply of Mobiles Phones.
+				People are being Sophiscated day to day so we have a freeshipping services to the customer doors as well but it is limited upto Valley Areas.
+				Out of Valley, We charge a shipping costs on the basis of locations. 
+				
+		
+		</div>
+
+		<div class="rent">
+			<h4 class="gurr">Address</h4>
+			<p style="padding-left:60px;"class="ray">
+				 <span style="padding-left:10px;">We are located at</span><br> 
+				1. Ganesh Chowk,Budhanilkantha near IME <br>
+				2. Bhatbhateni, Chakrapath<br>
+				3. StarMall ,Putalisadak <br>
+				4. Dilibazar on the east of Global Consultancy<br>
+				5. Maitighar<br>
+				6. DurbarMarg nearby Narayanhiti Palace<br>
+				7. Jamal side around Delicious Momo Pasal<br>
+
+			</p>
+
+		</div>
+
+		<div class="rent">
+			<h4 class="gurr">Overview</h4>
+			<P style=" text-align: center;"class="ray">
+				<a class="rat" href="Index.html">Home</a><br>
+				<a class="rat"href="Products.html">Products</a><br>
+				<a class="rat" href="Blog.html">Blog</a><br>
+				<a class="rat" href="Research.html">Research</a><br>
+				<a class="rat" href="Contacts.html">Contacts</a><br>
+				<a class="rat" href="#Subscribe">Subscribe</a><br>
+				<a class="rat"href="LogIn.Html">LogIn</a><br>
+				<a class="rat" href="#Featured Products">Featured Products</a><br>
+				<a class="rat" href="#Newly Arrivals">Newly Arrivals</a>
+
+
+			</P>
+
+		</div>
+
+		<div class="rent">
+			<h4 class="gurr">Follow Us</h4>
+			<p style="text-align: center;" class="ray">
+				<a href="https://www.facebook.com/">Facebook</a><br>
+				<a href="https://www.instagram.com/?hl=en">Instagram<br>
+				<a href="https://twitter.com/i/flow/login">Twitter<br>
+				<a href="https://www.whatsapp.com/">WhatsApps<br>
+				<a href="https://www.viber.com/en/">Viber<br>
+				<a href="https://np.linkedin.com/">LinkedIn<br>
+				<a href="https://www.youtube.com/">YouTube
+				
+
+			</p>
+
+		</div>
+		 
+	</div>
+</footer>
+
+	
+
+
+</html>

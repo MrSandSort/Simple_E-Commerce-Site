@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Allocation of meta tags -->
+	<meta charset="utf-8">
+	<meta name="author" content="Sandesh Prasad Paudel">
+	<meta name="description" content="Products page Html">
+	<meta name="keyword" content="Html,Css,JavaScript,Products Page">
+    <!-- use of link tags for external css and title tags -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title> MobilePhones Store</title>
+
+</head>
+<body>
+    <script> 
+        // Internal Javascript using functions for Items to cart successfully
+
+        function myFunction(){
+            document.getElementsByTagName('button');
+            alert(' Your Item Is Carted Successfully')
+        }
+
+    </script>
+	<style>
+
+    
+        .Pop{
+            height: 350px;
+            font-family:Arial Narrow;
+            /* Arial Narrow font have for Narrow text */
+            font-size: 19px;
+            display: flex;
+        }
+        .hurr{
+            display: block;
+			height: 280px;
+			flex: 25%;
+			margin:10px 30px;
+			text-align: center;
+			background-color:white;
+            box-shadow:10px 10px 50px#229b7d;
+		    border-radius: 10px;
+
+        }
+        .sent img{
+            margin-top:8px;
+            height:140px;
+            
+        }
+    .unsent{
+        font-family:Arial Narrow;
+        font-size: 12px
+    }
+    .lett{
+        font-size: 14px;
+        font-family:monospace;
+        color:rgba(39, 53, 207, 0.879);
+    }
+    button{
+        cursor: pointer;
+    }
+
+    </style>
+    <header>
+        <!-- Similar properties are allocated in most of the section with just a small variation in number Using In-line Css is defined -->
+		<img style="height:78px; cursor:pointer; padding-bottom: 20px; padding-left: 20px; " src="logo.png">
+		<nav class="navbar">
+            <!-- navbar in header section starts here -->
+			<ul>
+                 <li><a href="LogIn.html">LogIn</a></li>
+				<li><a  href="Index.html">Home</a></li>
+				<li><a class="active" href="Products.html">Products</a>
+				<ul>
+					<li><a href="#Iphone">Iphone</a></li>
+					<li><a href="#Oppo">Oppo</a></li>
+					<li><a href="#MIUI">MIUI</a></li>
+					<li><a href="#Realme">Realme</a></li>
+					<li><a href="#OnePlus">OnePlus</a></li>
+
+				</ul>
+			    </li>
+				<li><a href="Blog.Html">Blog</a></li>
+				<li><a href="Research.Html">Research Section</a></li>
+				<li><a href="Contacts.Html">Contacts</a></li>
+				<li a href="#"><img style="height:70px; cursor:pointer; padding-bottom: 20px;" src="cart.jpg"></li>
+
+			</ul>
+
+		</nav>
+			
+	</header>
+
+    <section="one">
+        <!-- Inline css with proper html tags are used -->
+        <div style=" font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;height:200px;background-color: antiquewhite;  padding-top: 50px; text-align: center;">
+            <h1 style="font-size:40px;"><span style="color:brown;">Shopping </span> Store</h1><br>
+            <p style="color:rgb(34, 54, 113) ;">#You Gotta Look Down What We Have Added To Our Items...</p>
+        </div>
+
+    </section>
+
+    <section="two">
+        <div style="height:1800px;">
+        
+        <h1 style="color:maroon; text-align: center; margin-top:20px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;">Our Products</h1>
+        <div style="display:block; margin-top:60px; margin-left: 50px;">
+            <div class="Pop"><h3 style="text-align:center;"><a name="Iphone">Iphone</a></h3>
+                <div class="hurr">
+                    <!-- Div are maintained for products section -->
+                    
+                    <div class="sent"><img src="Iphone/Iphone13.png"></div>
+                    <div class="unsent">
+                          <span class="lett">Iphone 13</span><br><br><button onclick="myFunction()">Add To Cart</button><br><br>
+                           Price: NRs 1,37,500<br>
+                           Rating: 5.0 <br>
+                           8 Reviews
+                    
+
+
+                    </div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="Iphone/Iphone12Pro.jpg"></div>
+                    <div class="unsent">
+                        <span class="lett">Iphone 12Pro</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: NRs 1,79,500<br>
+                        Rating: 4.2 <br>
+                        12 Reviews
+                    </div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="Iphone/Iphone6.jpg"></div>
+                    <div class="unsent"> <span class="lett">Iphone 6</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                           Price: NRs 49,900<br>
+                           Rating:  4.6 <br>
+                           9 Reviews</div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="Iphone/Iphone11.jpg"></div>
+                    <div class="unsent"> <span class="lett">Iphone 11</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: NRs 99,500<br>
+                        Rating: 4.5 <br>
+                        14 Reviews</div>
+                </div>
+
+
+            </div>
+            <div class="Pop"><h3 class="hrr"><a name="Oppo">Oppo</a></h3>
+                <div class="hurr">
+                    <div class="sent"><img src="Oppo/OppoReno7.jpg"></div>
+                    <div class="unsent">
+                        <span class="lett">Oppo Reno7Pro</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 45,200<br>
+                        Rating: 4.1<br>
+                        6 Reviews
+
+                    
+                    </div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="Oppo/OppoX3.jpg"></div>
+                    <div class="unsent"><span class="lett">OppoFind X3Pro</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                    Price: Nrs 145,500<br>
+                    Rating: 4.8<br>
+                    10 Reviews</div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="Oppo/OppoX2.jpg"></div>
+                    <div class="unsent"><span class="lett">OppoFind X2Pro</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 1,07,500<br>
+                        Rating:5.0<br>
+                        18 Reviews</div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="Oppo/OppoA96.jpg"></div>
+                    <div class="unsent"><span class="lett">Oppo A96</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 20,500<br>
+                        Rating: 3.6<br>
+                        2 Reviews</div>
+                </div>
+            </div>
+            <div class="Pop"><h3 class="hrr"><a name="Realme">Realme</a></h3>
+                <div class="hurr">
+                    <div class="sent"><img src="Realme/Realme8.jpg.opdownload"></div>
+                    <div class="unsent"><span class="lett">Realme_8</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 30,500<br>
+                        Rating: 4.2<br>
+                        7 Reviews</div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="Realme/Realme7 Pro.jpg"></div>
+                    <div class="unsent"><span class="lett">Realme_7Pro</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 19,000<br>
+                        Rating: 3.8<br>
+                        11 Reviews</div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="Realme/Realme9i.jpg"></div>
+                    <div class="unsent"><span class="lett">Realme_9i</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 27,900<br>
+                        Rating: 4.6<br>
+                        17 Reviews</div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="Realme/Realme8i.jpg"></div>
+                    <div class="unsent"><span class="lett">Realme_8i</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 19,550<br>
+                        Rating: 3.2<br>
+                        5 Reviews</div>
+                </div>
+                
+            </div>
+            <div class="Pop"><h3 class="hrr"><a name="MIUI">MIUI</a></h3>
+                <div class="hurr">
+                    <div class="sent"><img src="MIUI/Redmi 9.jpg"></div>
+                    <div class="unsent"><span class="lett">Redmi 9</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 10,500<br>
+                        Rating: 3.1<br>
+                        3 Reviews</div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="MIUI/Redmi Note10Pro.jpg"></div>
+                    <div class="unsent"><span class="lett">Redmi Note10Pro</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 33,200<br>
+                        Rating: 4.3<br>
+                        19 Reviews</div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="MIUI/Redmi Note11.jpg"></div>
+                    <div class="unsent">
+                        <span class="lett">Redmi Note11</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 29,900<br>
+                        Rating: 4.6<br>
+                        14 Reviews</div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="MIUI/RedmiNote 10.jpg"></div>
+                    <div class="unsent"><span class="lett">Redmi Note10</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 22,000<br>
+                        Rating: 4.2<br>
+                        10 Reviews</div>
+                </div>
+            </div>
+            <div class="Pop"><h3><a class="hrr" name="OnePlus">OnePlus</a></h3>
+                <div class="hurr">
+                    <div class="sent"><img src="OnePlus/OnePlus7T.jpg"></div>
+                    <div class="unsent">
+                        <span class="lett">OnePlus7T</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 24,300<br>
+                        Rating: 3.8<br>
+                        25 Reviews
+                    </div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="OnePlus/OnePlus8.jpg"></div>
+                    <div class="unsent">
+                        <span class="lett">OnePlus8</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 18,900<br>
+                        Rating: 4.6<br>
+                        9 Reviews
+                    </div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="OnePlus/OnePlus8T.jpg"></div>
+                    <div class="unsent">
+                    <span class="lett">OnePlus8T</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 42,500<br>
+                        Rating: 4.9<br>
+                        17 Reviews
+                    </div>
+                </div>
+                <div class="hurr">
+                    <div class="sent"><img src="OnePlus/OnePLus9.jpg"></div>
+                    <div class="unsent">                    
+                        <span class="lett">OnePlus9</span><br><br><button  onclick="myFunction()">Add To Cart</button><br><br>
+                        Price: Nrs 31,000<br>
+                        Rating: 4.1<br>
+                        12 Reviews
+
+                    </div>
+            </div>
+
+        </div>
+     </div>
+
+   </section>
+
+   <section class="three">
+       <!-- Newsletters features are present here with a form but not responsive one  -->
+    <div class="Signup" style="height: 300px; padding:80px;" >
+		<div style=" float:left;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><h1><span style="color:rgb(74, 159, 131);">Subscribe As Soon </span>As Possible</h1><br>
+		<H2>Get Recent Updates about our Products and<span style="color:brown;"><br>Win Discount Vouchers</span></H2><br>
+		<h3>Drop Down Your Email...!!</h3>
+		</div>
+
+		<div style="float: right; padding-top:60px;">
+            <!-- In-line CSS In div is allocated -->
+			<p style="font-size:15px; font-family:monospace;">Get Freshout News About Our Products</p><br>
+			<form id="form" action="#">
+				<input style="width:300px; height:50px;" type="text" id="Email" placeholder="Type Your Email Here...">
+				<button style=" cursor:pointer;height:50px; width:140px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; background-color:aquamarine;"><h4><a name="Subscribe">Subscribe</a></h4></button>
+				 
+			</form>
+
+
+		</div>
+
+		
+	</div>
+</body>
+<footer>
+    <!-- Footer starts here as like Homepage contains -->
+    <div style=" color:white;height:250px; background-color:black; display:flex;">
+
+        <div class="rent">
+            <h4 class="gurr"> About Us</h4>
+            <p style="padding-left: 30px;"class="ray">
+                Clash Phones is all about giving updates of Mobile Phones and Selling Products based on those updates. We also sell Mobile Phones that have market demands holding over long time.We also maintain plethora supply of Mobiles Phones.
+                People are being Sophiscated day to day so we have a freeshipping services to the customer doors as well but it is limited upto Valley Areas.
+                Out of Valley, We charge a shipping costs on the basis of locations. 
+                
+        
+        </div>
+
+        <div class="rent">
+            <h4 class="gurr">Address</h4>
+            <p style="padding-left:60px;"class="ray">
+                 <span style="padding-left:10px;">We are located at</span><br> 
+                1. Ganesh Chowk,Budhanilkantha near IME <br>
+                2. Bhatbhateni, Chakrapath<br>
+                3. StarMall ,Putalisadak <br>
+                4. Dilibazar on the east of Global Consultancy<br>
+                5. Maitighar<br>
+                6. DurbarMarg nearby Narayanhiti Palace<br>
+                7. Jamal side around Delicious Momo Pasal<br>
+
+            </p>
+
+        </div>
+
+        <div class="rent">
+            <h4 class="gurr">Overview</h4>
+            <P style=" text-align: center;"class="ray">
+                <a class="rat" href="Index.html">Home</a><br>
+                <a class="rat"href="Products.html">Products</a><br>
+                <a class="rat" href="Blog.html">Blog</a><br>
+                <a class="rat" href="Research.html">Research</a><br>
+                <a class="rat" href="Contacts.html">Contacts</a><br>
+                <a class="rat" href="#Subscribe">Subscribe</a><br>
+                <a class="rat"href= "LogIn.html">LogIn</a><br>
+                <a class="rat" href="Index.html#Featured Products">Featured Products</a><br>
+                <a class="rat" href="Index.html#Newly Arrivals">Newly Arrivals</a>
+
+
+            </P>
+
+        </div>
+
+        <div class="rent">
+            <h4 class="gurr">Follow Us</h4>
+            <p style="text-align: center;" class="ray">
+                <a href="https://www.facebook.com/">Facebook</a><br>
+				<a href="https://www.instagram.com/?hl=en">Instagram<br>
+				<a href="https://twitter.com/i/flow/login">Twitter<br>
+				<a href="https://www.whatsapp.com/">WhatsApps<br>
+				<a href="https://www.viber.com/en/">Viber<br>
+				<a href="https://np.linkedin.com/">LinkedIn<br>
+				<a href="https://www.youtube.com/">YouTube
+				
+            </p>
+
+        </div>
+         
+    </div>
+</footer>
+<!-- End of footer tag -->
+</section>
+<!-- End of final section tag -->

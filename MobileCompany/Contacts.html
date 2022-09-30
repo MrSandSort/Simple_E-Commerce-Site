@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta tag is used to distinguish content and name  -->
+	<meta charset="utf-8">
+	<meta name="author" content="Sandesh Prasad Paudel">
+	<meta name="description" content="ContactsPage Html">
+	<meta name="keyword" content="Html,Css,JavaScript,Contacts Page,Forms">
+    <!-- Link tag is allocated with title tags below -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<title> MobilePhones Store</title>
+</head>
+<body>
+    <script src="java.js"></script>
+  
+
+    <style>
+        /* Internal Css Properties */
+        *{
+            font-family: Arial Narrow;
+        }
+        body{
+            background-image:url("mountains.jpg");
+            /* Background image is used through the help of Css attributes */
+            margin: 0;
+
+        }
+        #overlay{
+            width: 100%;
+            height: 100%;
+            position:relative;
+            /* relative postion for this div is given */
+         
+        }
+        form{
+            max-width:550px;
+            width:90%;
+            background:antiquewhite;
+            margin:20px 400px;
+            padding: 40px;
+            border-radius: 3px;
+            box-sizing: border-box;}
+         
+            h1{
+                margin: 0;
+                text-align: center;
+
+            }
+
+            label{
+                display: block;
+                margin: 20px 0;
+            }
+            input, textarea{
+                width: 100%;
+                padding: 10px;
+                box-sizing: border-box;
+                outline:none;
+                resize:none;
+                border:none;
+                border-bottom:1px solid#D3D3D3;
+            }
+          
+        
+                
+            #error{
+                color: red;}
+
+
+    </style>
+	
+	<header>
+        <!-- header section starts here -->
+        <!-- Image tags with inline css is used -->
+		<img style="height:78px; cursor:pointer; padding-bottom: 20px; padding-left: 20px; " src="logo.png">
+		<nav class="navbar">
+            <!-- Navigation bar starts here -->
+			<ul>
+                <li><a href="LogIn.html">LogIn</a></li>
+				<li><a href="Index.html">Home</a></li>
+				<li><a href="Products.html">Products</a>
+				<ul>
+				    <li><a href="Products.html#Iphone">Iphone</a></li>
+					<li><a href="Products.html#Oppo">Oppo</a></li>
+					<li><a href="Products.html#MIUI">MIUI</a></li>
+					<li><a href="Products.html#Realme">Realme</a></li>
+					<li><a href="Products.html#OnePlus">OnePlus</a></li>
+
+				</ul>
+			    </li>
+				<li><a href="Blog.Html">Blog</a></li>
+				<li><a href="Research.Html">Research Section</a></li>
+				<li><a class="active" href="Contacts.Html">Contacts</a></li>
+				<li a href="#"><img style="height:70px; cursor:pointer; padding-bottom: 20px;" src="cart.jpg"></li>
+
+			</ul>
+		</nav>
+    </header>
+
+    <section class="one">
+        <!-- Forms tag is used to created Contacts forms  -->
+        <div id="overlay">
+           <form name="ContactsForms" onsubmit="validateForm()">
+
+            <h1 style="font-family:'Times New Roman', Times, serif ; color:brown;">For Further Queries <br>Send Us a Message</h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name">
+            
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Type Your Email Here...">
+
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Message Here" rows="8"></textarea>
+            <div>
+                <!-- button tag is used to submit and then see the actions through the help of onsubmit functions in javascript -->
+                <button style=" margin-left:140px; margin-top:20px; height:40px; width:190px; border:30px;border-radius:30px; background-color: tomato;" type="submit">
+                    Submit:
+
+                </button>
+            </div>
+
+        
+            </div>
+
+
+
+                
+
+
+
+            </form>
+        </div>
+
+    </section>
+
+</body>
+<footer>
+    <!-- Footer section starts here with div containing inline css properties -->
+    <div style=" color:white;height:250px; background-color:black; display:flex;">
+
+        <div class="rent">
+            <h4 class="gurr"> About Us</h4>
+            <p style="padding-left: 30px;"class="ray">
+                Clash Phones is all about giving updates of Mobile Phones and Selling Products based on those updates. We also sell Mobile Phones that have market demands holding over long time.We also maintain plethora supply of Mobiles Phones.
+                People are being Sophiscated day to day so we have a freeshipping services to the customer doors as well but it is limited upto Valley Areas.
+                Out of Valley, We charge a shipping costs on the basis of locations. 
+                
+        
+        </div>
+
+        <div class="rent">
+            <h4 class="gurr">Address</h4>
+            <p style="padding-left:60px;"class="ray">
+                 <span style="padding-left:10px;">We are located at</span><br> 
+                1. Ganesh Chowk,Budhanilkantha near IME <br>
+                2. Bhatbhateni, Chakrapath<br>
+                3. StarMall ,Putalisadak <br>
+                4. Dilibazar on the east of Global Consultancy<br>
+                5. Maitighar<br>
+                6. DurbarMarg nearby Narayanhiti Palace<br>
+                7. Jamal side around Delicious Momo Pasal<br>
+
+            </p>
+
+        </div>
+
+        <div class="rent">
+            <h4 class="gurr">Overview</h4>
+            <P style=" text-align: center;"class="ray">
+                <a class="rat" href="Index.html">Home</a><br>
+                <a class="rat"href="Products.html">Products</a><br>
+                <a class="rat" href="Blog.html">Blog</a><br>
+                <a class="rat" href="Research.html">Research</a><br>
+                <a class="rat" href="Contacts.html">Contacts</a><br>
+                <a class="rat" href="#Subscribe">Subscribe</a><br>
+                <a class="rat"href= "LogIn.html">LogIn</a><br>
+                <a class="rat" href="Index.html#Featured Products">Featured Products</a><br>
+                <a class="rat" href="Index.html#Newly Arrivals">Newly Arrivals</a>
+
+
+            </P>
+
+        </div>
+
+        <div class="rent">
+            <h4 class="gurr">Follow Us</h4>
+            <p style="text-align: center;" class="ray">
+                <a href="https://www.facebook.com/">Facebook</a><br>
+				<a href="https://www.instagram.com/?hl=en">Instagram<br>
+				<a href="https://twitter.com/i/flow/login">Twitter<br>
+				<a href="https://www.whatsapp.com/">WhatsApps<br>
+				<a href="https://www.viber.com/en/">Viber<br>
+				<a href="https://np.linkedin.com/">LinkedIn<br>
+				<a href="https://www.youtube.com/">YouTube
+				
+                
+
+            </p>
+
+        </div>
+         
+    </div>
+ </footer>
+ <!-- End of footer tags -->
